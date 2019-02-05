@@ -1,11 +1,14 @@
 # Demo project for Spring Reactor
 
-## Build and runn
+## Build and run
 ```
 mvn spring-boot:run
 ```
 
-Open: http://localhost:8090/hello
+## Open
+http://localhost:8090/hello
+
+---
 
 
 # Using Reactor Project in Java
