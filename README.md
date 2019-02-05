@@ -1,3 +1,13 @@
+# Demo project for Spring Reactor
+
+## Build and runn
+```
+mvn spring-boot:run
+```
+
+Open: http://localhost:8090/hello
+
+
 # Using Reactor Project in Java
 
 > Use Reactor 3 if you are allowed to use Java 8+, use RxJava 2 if you are stuck on Java 6+ or need your functions to throw checked exceptions
