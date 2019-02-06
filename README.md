@@ -6,6 +6,7 @@
 - MongoDB
 - Reactive Crud Repository
 - Reactive Mongo Template
+- Autopopulate db on startup
 
 ## Build and run
 ```
@@ -13,7 +14,8 @@ mvn spring-boot:run
 ```
 
 ## Open
-http://localhost:8090/hello
+http://localhost:8090/
+http://localhost:8090/api/product/1
 
 ---
 
