@@ -1,5 +1,12 @@
 # Demo project for Spring Reactor
 
+## Feautres
+- Spring Boot 2.1
+- Spring Data Reactive Repositories
+- MongoDB
+- Reactive Crud Repository
+- Reactive Mongo Template
+
 ## Build and run
 ```
 mvn spring-boot:run

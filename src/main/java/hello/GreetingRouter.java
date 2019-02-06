@@ -8,10 +8,10 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
-@Configuration
+//@Configuration
 public class GreetingRouter {
 
-	@Bean
+	//@Bean
 	public RouterFunction<ServerResponse> route(GreetingHandler greetingHandler) {
 
 		return RouterFunctions
