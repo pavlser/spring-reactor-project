@@ -1,6 +1,10 @@
 package com.pavlser.demo;
 
+import static org.springframework.http.MediaType.APPLICATION_JSON;
+
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
+import static org.springframework.web.reactive.function.server.RequestPredicates.POST;
+import static org.springframework.web.reactive.function.server.RequestPredicates.accept;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +27,9 @@ public class Router {
 				.contentType(MediaType.TEXT_HTML)
 				.body(BodyInserters.fromObject("Hello, Spring Reactor!")))
 			.andRoute(GET("/api/product/{id}")
-				.and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), handler::getById);
+				.and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), handler::getById)
+			.andRoute(POST("/api/product")
+				.and( accept(APPLICATION_JSON)), handler::createProduct);
 	}
 	
 }
